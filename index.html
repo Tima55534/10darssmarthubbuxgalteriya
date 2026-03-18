@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ish Haqqi - Ikki Yoqlama Yozuvlar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .account-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(140, 198, 63, 0.2);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .account-card:hover {
+            transform: translateX(10px);
+            background: rgba(140, 198, 63, 0.05);
+            border-color: var(--primary-green);
+        }
+
+        .account-number {
+            background: var(--primary-green);
+            color: #000;
+            font-weight: 800;
+            padding: 5px 12px;
+            border-radius: 8px;
+            margin-right: 15px;
+            min-width: 70px;
+            text-align: center;
+        }
+
+        .entry-box {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--tech-green);
+            text-align: left;
+        }
+
+        .entry-formula {
+            font-family: 'Courier New', monospace;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .entry-desc {
+            color: var(--tech-green);
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .entry-formula {
+                font-size: 1.1rem;
+            }
+
+            .entry-desc {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slides-container">
+        <!-- Slide 1: Title -->
+        <div class="slide active" id="slide-1">
+            <div class="bg-shape bg-shape-1"></div>
+            <h1 style="font-size: 2.8rem; line-height: 1.2;" class="mobile-title">2-BO'LIM<br>KADRLAR VA ISH HAQQI
+                HISOBI</h1>
+            <div style="height: 2px; width: 100px; background: var(--primary-green); margin: 20px auto;"></div>
+            <p style="font-size: 1.8rem; text-align: center; color: var(--primary-green); font-weight: 600;"
+                class="mobile-subtitle">
+                Ish haqqi hisoblash:<br>Ikki yoqlama yozuvlar (Pravotkalar)
+            </p>
+        </div>
+
+        <!-- Slide 2: Shotlarimiz -->
+        <div class="slide" id="slide-2">
+            <div class="bg-shape bg-shape-2"></div>
+            <h2 style="font-size: 1.8rem;">Ish haqqi hisoblash uchun shotlarimiz</h2>
+            <div class="content-box" style="padding: 25px;">
+                <div class="account-card">
+                    <span class="account-number">9420</span>
+                    <span style="font-size: 1.2rem;">Ma'muriy xarajatlar</span>
+                </div>
+                <div class="account-card">
+                    <span class="account-number">6710</span>
+                    <span style="font-size: 1.2rem;">Mehnat haqqi bo'yicha xodimlar bilan hisob-kitoblar</span>
+                </div>
+                <div class="account-card">
+                    <span class="account-number">6420</span>
+                    <span style="font-size: 1.2rem;">Jismoniy shaxslardan olinadigan daromad solig'i</span>
+                </div>
+                <div class="account-card">
+                    <span class="account-number">6520</span>
+                    <span style="font-size: 1.2rem;">Ijtimoiy soliq bo'yicha qarzlar</span>
+                </div>
+                <div class="account-card">
+                    <span class="account-number">6530</span>
+                    <span style="font-size: 1.2rem;">INPS (Shaxsiy pensiya jamg'armasi)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Pravotkalar -->
+        <div class="slide" id="slide-3">
+            <div class="bg-shape bg-shape-1"></div>
+            <h2 style="font-size: 1.8rem;">Yangi Pravotkalar</h2>
+            <div class="content-box" style="padding: 20px; background: rgba(255,255,255,0.02);">
+
+                <div class="entry-box">
+                    <div class="entry-formula">Debit 9420 / Kredit 6710</div>
+                    <div class="entry-desc">Ish haqi hisoblandi (Brutto)</div>
+                </div>
+
+                <div class="entry-box" style="border-left-color: #ff4444;">
+                    <div class="entry-formula">Debit 6710 / Kredit 6420</div>
+                    <div class="entry-desc">Ish haqidan daromad solig'i (JSHDS) ushlandi</div>
+                </div>
+
+                <div class="entry-box" style="border-left-color: #ffcc00;">
+                    <div class="entry-formula">Debit 6420 / Kredit 6530</div>
+                    <div class="entry-desc">Daromad solig'i hisobidan INPS ushlandi</div>
+                </div>
+
+                <div class="entry-box" style="border-left-color: var(--primary-green);">
+                    <div class="entry-formula">Debit 9420 / Kredit 6520</div>
+                    <div class="entry-desc">Ijtimoiy soliq hisoblandi (Korxona xarajati)</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Slide 4: Darsdan olingan natijalar -->
+        <div class="slide" id="slide-4">
+            <div class="bg-shape bg-shape-2"></div>
+            <h2 style="font-size: 1.8rem;">Darsdan olingan natijalar</h2>
+            <div class="content-box">
+                <ul class="plan-list" style="text-align: left; font-size: 1.1rem;">
+                    <li style="margin-bottom: 20px;">✅ Ish haqi hisobvariqlari (9420, 6710) bilan ishlashni o'rgandik.
+                    </li>
+                    <li style="margin-bottom: 20px;">✅ Soliqlar (6420, 6520) va INPS (6530) uchun tegishli shotlarni
+                        aniqladik.</li>
+                    <li style="margin-bottom: 20px;">✅ Oylikni hisoblashdan to qo'lga tegishigacha bo'lgan barcha
+                        <strong>pravotkalarni</strong> tizimlashtirdik.
+                    </li>
+                    <li>✅ Ijtimoiy soliq korxona xarajati sifatida qanday aks etishini tushundik.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 5: Yakun -->
+        <div class="slide" id="slide-5">
+            <div class="bg-shape bg-shape-1" style="animation: pulse 3s infinite;"></div>
+            <h1 style="font-size: 3.5rem;">O'SISH DAN<br><span
+                    style="color: var(--primary-green); -webkit-text-fill-color: var(--primary-green);">TO'XTAMANG!</span>
+                🚀</h1>
+            <p style="font-size: 1.2rem; color: #888; margin-top: 20px;">Kadrlar va Ish Haqqi Hisobi (Pravotkalar)</p>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="controls">
+        <div class="control-btn" onclick="prevSlide()">❮</div>
+        <div class="control-btn" onclick="nextSlide()">❯</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
